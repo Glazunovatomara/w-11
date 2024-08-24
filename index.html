@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css"/>
     <script rel="scriptsheet" src="./assets/style/style.css"></script>
-    <title>to-do list</title>
+    <title>ToDo list</title>
 </head>
 <body>
-    
+    <main class="main__list">
+        <h1 class="main__list_title">ToDo List</h1>
+        <form class="main__list_form">
+            <input type="text" class="main__list_form-input" id="input"/>
+            <button class="main__list_form-btn" onclick="writeList()">Добавить</button>
+        </form>
+        <ul id="items" class="main__list_items">
+        </ul>
+    </main>
 </body>
 </html>
