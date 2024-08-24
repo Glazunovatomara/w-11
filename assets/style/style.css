@@ -21,9 +21,14 @@
 .main__list_form {
     display: flex;
     flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
     gap: 10px;
+    justify-content: space-between;
 }
 .main__list_form-input {
+    width: 100%;
+    margin-left: 20px;
     padding: 10px;
     border-radius: 9px;
     border: 1px solid #c5cdc9;
@@ -52,4 +57,12 @@
     flex-direction: column;
     list-style-type: none;
     color: #13a552;
+    text-align: center;
+}
+.main__list_items-item {
+    cursor:pointer;
+}
+.inert {
+    color: #c5cdc9;
+    text-decoration: line-through;
 }
