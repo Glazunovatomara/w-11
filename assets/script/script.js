@@ -17,7 +17,7 @@ writeList()
 const list = document.querySelector('ul');
 
 list.addEventListener('click', function(event) {
-    if (event.target.tagName === 'LI') {
-        event.target.classList.toggle('inert');
+    if (event.target.tagName === 'LI') {// код при нажатии на li
+        event.target.classList.toggle('inert');//+- класс
     }
 });
