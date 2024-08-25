@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css"/>
-    <script rel="scriptsheet" src="./assets/script/script.js"></script>
     <title>ToDo list</title>
 </head>
 <body>
@@ -12,10 +11,11 @@
         <h1 class="main__list_title">ToDo List</h1>
         <form class="main__list_form">
             <input type="text" class="main__list_form-input" id="input" value="" placeholder="Введите задачу"/>
-            <button class="main__list_form-btn" onclick="writeList()" type="button">Добавить</button>
+            <button onclick="writeList()" class="main__list_form-btn"  type="button" >Добавить</button>
         </form>
         <ul id="items" class="main__list_items">
         </ul>
     </main>
+    <script rel="scriptsheet" src="./assets/script/script.js"></script>
 </body>
 </html>

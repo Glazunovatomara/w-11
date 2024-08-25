@@ -1,4 +1,3 @@
-//const list = document.getElementById('items');
 
 const writeList = () => {
     const inputValue = document.getElementById('input').value;
@@ -12,12 +11,14 @@ const writeList = () => {
 
     document.getElementById('input').value = ''
 }
+
 writeList()
+
 
 const list = document.querySelector('ul');
 
-list.addEventListener('click', function(event) {
-    if (event.target.tagName === 'LI') {// код при нажатии на li
-        event.target.classList.toggle('inert');//+- класс
+list.addEventListener('click', function(e) {
+    if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('inert');
     }
 });
