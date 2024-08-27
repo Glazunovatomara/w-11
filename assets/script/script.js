@@ -1,6 +1,12 @@
+const btn = document.querySelector('.main__list_form-btn');
 
 const writeList = () => {
-    const inputValue = document.getElementById('input').value;
+    const input = document.getElementById('input');
+    let inputValue = input.value;
+
+    if(input.value === ''){
+        return
+    }
 
     const items = document.getElementById('items');
 
@@ -9,11 +15,10 @@ const writeList = () => {
     items.append(newItem);
     newItem.classList.add('main__list_items-item');
 
-    document.getElementById('input').value = ''
+    input.value = ''
 }
 
-writeList()
-
+btn.addEventListener('click',writeList);
 
 const list = document.querySelector('ul');
 
